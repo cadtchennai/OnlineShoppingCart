@@ -1,0 +1,21 @@
+kafka:
+  brokerAddress: localhost:9092
+  restURL: http://localhost:8224/orders/kafkaProducerSuccess
+  responseTopic: fundTransferResponseTopic
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
+  client:
+    serviceUrl:
+      defaultZone: ${eurekahost} 
+    healthcheck:
+      enabled: true
+    lease:
+      duration: 5
+
+spring:
+  application:
+    name: shipping-service
+  jmx:
+    enabled: false

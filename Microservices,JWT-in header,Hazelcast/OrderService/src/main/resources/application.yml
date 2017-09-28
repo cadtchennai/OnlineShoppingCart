@@ -1,0 +1,20 @@
+kafka:
+  brokerAddress: localhost:9092
+  topic: fundTransferRequestTopic
+  topic1: fundTransferRequestTopicShipping
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
+  client:
+    serviceUrl:
+      defaultZone: ${eurekahost} 
+    healthcheck:
+      enabled: true
+    lease:
+      duration: 5	  
+spring:
+  application:
+    name: order-service
+  jmx:
+    enabled: false

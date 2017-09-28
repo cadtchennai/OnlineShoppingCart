@@ -1,0 +1,6 @@
+com\techm\auth\hystrix\GenerateToken.class
+com\techm\auth\hystrix\TokenIsValid.class
+com\techm\auth\jwt\JwtUtil.class
+com\techm\auth\jwt\GenerateJwtToken.class
+com\techm\auth\main\AuthService.class
+com\techm\auth\archiusSchedule\ScheduledTasks.class
